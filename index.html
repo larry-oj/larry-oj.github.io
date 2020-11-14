@@ -25,8 +25,8 @@ int main()<br>
 		&emsp;&emsp;rnd1 = (a + c) / 2;<br>
 		&emsp;&emsp;rnd2 = (c + b) / 2;<br>
 		<br>
-		&emsp;&emsp;res1 = exp(-rnd1) + (0.25 * rnd1) - 0.98;<br>
-		&emsp;&emsp;res2 = exp(-rnd2) + (0.25 * rnd2) - 0.98;<br>
+		&emsp;&emsp;res1 = pow(rnd1, 2) - exp(rnd1) - 3 * rnd1 + 2;<br>
+		&emsp;&emsp;res2 = pow(rnd2, 2) - exp(rnd2) - 3 * rnd2 + 2;<br>
 		&emsp;&emsp;<br>
 		&emsp;&emsp;if (abs(res1) < abs(res2))<br>
 		&emsp;&emsp;{<br>
@@ -52,8 +52,8 @@ int main()<br>
 		&emsp;&emsp;ac = (a + c) / 2;<br>
 		&emsp;&emsp;cb = (c + b) / 2;<br>
 		<br>
-		&emsp;&emsp;res1 = -4 * exp(ac) + 4 * 0.98;<br>
-		&emsp;&emsp;res2 = -4 * exp(cb) + 4 * 0.98;<br>
+		&emsp;&emsp;res1 = pow(ac, 2) - exp(ac) - 2 * ac + 2;<br>
+		&emsp;&emsp;res2 = pow(cb, 2) - exp(cb) - 2 * cb + 2;<br>
 		<br>
 		&emsp;&emsp;lenL = abs(abs(ac) - res1);<br>
 		&emsp;&emsp;lenR = abs(abs(cb) - res2);<br>
@@ -68,7 +68,7 @@ int main()<br>
 				&emsp;&emsp;}<br>
 				&emsp;} <br>
 				&emsp;while (abs(res1 - res2) >= 0.0001);<br>
-				&emsp;result2 = -(a + b) / 2;<br>
+				&emsp;result2 = (a + b) / 2;<br>
 	<br>
 	&emsp;cout << "На відрізку [-1; 1]:" << endl;<br>
 	&emsp;cout << "Методом половинного ділення = " << result1 << endl;<br>
