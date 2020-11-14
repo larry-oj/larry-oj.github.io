@@ -1,9 +1,80 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>WIP | IT-04 Календарь</title>
+		<title>code</title>
 	</head>
 	<body>
-		<h1><a href="./examples/locales.html">Календарь тут</a></h1>
-	</body>
-</html>
+<code>
+#include &lt;iostream&gt;<br>
+#include &lt;cstdlib&gt;<br>
+#include &lt;windows.h&gt;<br>
+<br>
+using namespace std;<br>
+<br>
+int main()<br>
+{<br>
+	&emsp;cout.precision(4);<br>
+	&emsp;SetConsoleOutputCP(1251);<br>
+	&emsp;SetConsoleCP(1251);<br>
+	<br>
+	&emsp;double a = -1, b = 1, c, ac, cb, rnd1, rnd2, res1, res2, lenL, lenR, result1, result2;<br>
+	<br>
+	&emsp;do<br>
+	&emsp;{<br>
+		&emsp;&emsp;c = (a + b) / 2;<br>
+		&emsp;&emsp;rnd1 = (a + c) / 2;<br>
+		&emsp;&emsp;rnd2 = (c + b) / 2;<br>
+		<br>
+		&emsp;&emsp;res1 = exp(-rnd1) + (0.25 * rnd1) - 0.98;<br>
+		&emsp;&emsp;res2 = exp(-rnd2) + (0.25 * rnd2) - 0.98;<br>
+		&emsp;&emsp;<br>
+		&emsp;&emsp;if (abs(res1) < abs(res2))<br>
+		&emsp;&emsp;{<br>
+			&emsp;&emsp;&emsp;b = c;<br>
+			&emsp;&emsp;}<br>
+			&emsp;&emsp;else<br>
+			&emsp;&emsp;{<br>
+				&emsp;&emsp;&emsp;a = c;<br>
+				&emsp;&emsp;}<br>
+				&emsp;} <br>
+				&emsp;while (abs(rnd1 - rnd2) >= 0.0001);<br>
+				&emsp;result1 = (a + b) / 2;<br>
+	<br>
+	&emsp;a = -1;<br>
+	&emsp;b = 1;<br>
+	&emsp;c = 0;		<br>	
+	&emsp;res1 = 0;<br>
+	&emsp;res2 = 0;<br>
+	<br>
+	&emsp;do<br>
+	&emsp;{<br>
+		&emsp;&emsp;c = (a + b) / 2;<br>
+		&emsp;&emsp;ac = (a + c) / 2;<br>
+		&emsp;&emsp;cb = (c + b) / 2;<br>
+		<br>
+		&emsp;&emsp;res1 = -4 * exp(ac) + 4 * 0.98;<br>
+		&emsp;&emsp;res2 = -4 * exp(cb) + 4 * 0.98;<br>
+		<br>
+		&emsp;&emsp;lenL = abs(abs(ac) - res1);<br>
+		&emsp;&emsp;lenR = abs(abs(cb) - res2);<br>
+
+		&emsp;&emsp;if (lenL > lenR)<br>
+		&emsp;&emsp;{<br>
+			&emsp;&emsp;&emsp;a = c;<br>
+			&emsp;&emsp;}<br>
+			&emsp;&emsp;if (lenL < lenR)<br>
+			&emsp;&emsp;{<br>
+				&emsp;&emsp;&emsp;b = c;<br>
+				&emsp;&emsp;}<br>
+				&emsp;} <br>
+				&emsp;while (abs(res1 - res2) >= 0.0001);<br>
+				&emsp;result2 = -(a + b) / 2;<br>
+	<br>
+	&emsp;cout << "На відрізку [-1; 1]:" << endl;<br>
+	&emsp;cout << "Методом половинного ділення = " << result1 << endl;<br>
+	&emsp;cout << "Ітераційним методом = " << result2 << endl;<br>
+	&emsp;cout << "Різниця = " << abs(result1 - result2) << endl;<br>
+}<br>
+</code><br>
+	</body><br>
+</html><br>
