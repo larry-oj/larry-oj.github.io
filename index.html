@@ -1,80 +1,97 @@
 <!DOCTYPE html>
+<!-- посхалка хддд -->
 <html>
 	<head>
-		<title>code</title>
+		<meta charset="utf-8"/>
+		<link rel="Stylesheet" type="text/css" href="style.css" />
+		<title>I love IT-04</title>
 	</head>
 	<body>
-<code>
-#include &lt;iostream&gt;<br>
-#include &lt;cstdlib&gt;<br>
-#include &lt;windows.h&gt;<br>
-<br>
-using namespace std;<br>
-<br>
-int main()<br>
-{<br>
-	&emsp;cout.precision(4);<br>
-	&emsp;SetConsoleOutputCP(1251);<br>
-	&emsp;SetConsoleCP(1251);<br>
-	<br>
-	&emsp;double a = -1, b = 1, c, ac, cb, rnd1, rnd2, res1, res2, lenL, lenR, result1, result2;<br>
-	<br>
-	&emsp;do<br>
-	&emsp;{<br>
-		&emsp;&emsp;c = (a + b) / 2;<br>
-		&emsp;&emsp;rnd1 = (a + c) / 2;<br>
-		&emsp;&emsp;rnd2 = (c + b) / 2;<br>
-		<br>
-		&emsp;&emsp;res1 = pow(rnd1, 2) - exp(rnd1) - 3 * rnd1 + 2;<br>
-		&emsp;&emsp;res2 = pow(rnd2, 2) - exp(rnd2) - 3 * rnd2 + 2;<br>
-		&emsp;&emsp;<br>
-		&emsp;&emsp;if (abs(res1) < abs(res2))<br>
-		&emsp;&emsp;{<br>
-			&emsp;&emsp;&emsp;b = c;<br>
-			&emsp;&emsp;}<br>
-			&emsp;&emsp;else<br>
-			&emsp;&emsp;{<br>
-				&emsp;&emsp;&emsp;a = c;<br>
-				&emsp;&emsp;}<br>
-				&emsp;} <br>
-				&emsp;while (abs(rnd1 - rnd2) >= 0.0001);<br>
-				&emsp;result1 = (a + b) / 2;<br>
-	<br>
-	&emsp;a = -1;<br>
-	&emsp;b = 1;<br>
-	&emsp;c = 0;		<br>	
-	&emsp;res1 = 0;<br>
-	&emsp;res2 = 0;<br>
-	<br>
-	&emsp;do<br>
-	&emsp;{<br>
-		&emsp;&emsp;c = (a + b) / 2;<br>
-		&emsp;&emsp;ac = (a + c) / 2;<br>
-		&emsp;&emsp;cb = (c + b) / 2;<br>
-		<br>
-		&emsp;&emsp;res1 = pow(ac, 2) - exp(ac) - 2 * ac + 2;<br>
-		&emsp;&emsp;res2 = pow(cb, 2) - exp(cb) - 2 * cb + 2;<br>
-		<br>
-		&emsp;&emsp;lenL = abs(abs(ac) - res1);<br>
-		&emsp;&emsp;lenR = abs(abs(cb) - res2);<br>
-
-		&emsp;&emsp;if (lenL > lenR)<br>
-		&emsp;&emsp;{<br>
-			&emsp;&emsp;&emsp;a = c;<br>
-			&emsp;&emsp;}<br>
-			&emsp;&emsp;if (lenL < lenR)<br>
-			&emsp;&emsp;{<br>
-				&emsp;&emsp;&emsp;b = c;<br>
-				&emsp;&emsp;}<br>
-				&emsp;} <br>
-				&emsp;while (abs(res1 - res2) >= 0.0001);<br>
-				&emsp;result2 = (a + b) / 2;<br>
-	<br>
-	&emsp;cout << "На відрізку [-1; 1]:" << endl;<br>
-	&emsp;cout << "Методом половинного ділення = " << result1 << endl;<br>
-	&emsp;cout << "Ітераційним методом = " << result2 << endl;<br>
-	&emsp;cout << "Різниця = " << abs(result1 - result2) << endl;<br>
-}<br>
-</code><br>
-	</body><br>
-</html><br>
+		<div id="caption1"><h2>Первая неделя</h2></div>
+		<table align="center">
+			<tr>
+				<th class="time">Время</th>
+				<th class="discipline">Понедельник</th>
+				<th class="discipline">Вторник</th>
+				<th class="discipline">Среда</th>
+				<th class="discipline">Четверг</th>
+				<th class="discipline">Пятница</th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">08-30 - 10-05</p></th>
+				<th><p id="discipline">АСД лаб</p></th>
+				<th><p id="discipline">ВМ прак</p></th>
+				<th></th>
+				<th><p id="discipline">КомпПИ лек</p></th>
+				<th><p id="discipline">ОП лек</p></th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">10-25 - 12-00</p></th>
+				<th><p id="discipline">АСД лек</p></th>
+				<th></th>
+				<th><p id="discipline">ВМ прак</p></th>
+				<th><p id="discipline">АК лек</p></th>
+				<th></th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">12-20 - 13-55</p></th>
+				<th><p id="discipline">ФП</p></th>
+				<th><p id="discipline">ВМ лек</p></th>
+				<th><p id="discipline">ОП лаб</p></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">14-15 - 15-50</p></th>
+				<th></th>
+				<th><p id="discipline">КомпПИ лаб</p></th>
+				<th><p id="discipline">ВМ лек</p></th>
+				<th><p id="discipline">Англ</p></th>
+				<th></th>
+			</tr>
+		</table>
+		<div id="caption2"><h2>Вторая неделя</h2></div>
+		<table align="center">
+			<tr>
+				<th class="time">Время</th>
+				<th class="discipline">Понедельник</th>
+				<th class="discipline">Вторник</th>
+				<th class="discipline">Среда</th>
+				<th class="discipline">Четверг</th>
+				<th class="discipline">Пятница</th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">08-30 - 10-05</p></th>
+				<th><p id="discipline">АСД лаб</p></th>
+				<th></th>
+				<th><p id="discipline">ОП лаб</p></th>
+				<th><p id="discipline">КомпПИ лек</p></th>
+				<th><p id="discipline">ОП лек</p></th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">10-25 - 12-00</p></th>
+				<th><p id="discipline">АСД лек</p></th>
+				<th></th>
+				<th><p id="discipline">ВМ прак</p></th>
+				<th><p id="discipline">АК лек</p></th>
+				<th><p id="discipline">Укр прак</p></th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">12-20 - 13-55</p></th>
+				<th><p id="discipline">ФП</p></th>
+				<th><p id="discipline">ВМ лек</p></th>
+				<th><p id="discipline">ОП лаб</p></th>
+				<th><p id="discipline">АК лаб</p></th>
+				<th></th>
+			</tr>
+			<tr>
+				<th class="time"><p id="time">14-15 - 15-50</p></th>
+				<th></th>
+				<th></th>
+				<th><p id="discipline">Укр лек</p></th>
+				<th><p id="discipline">Англ</p></th>
+				<th></th>
+			</tr>
+		</table>
+	</body>
+</html>
