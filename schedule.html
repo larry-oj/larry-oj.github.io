@@ -7,6 +7,13 @@
 		<title>I love IT-04</title>
 	</head>
 	<body>
+
+		<script>
+			function playAudio(url) {
+  				new Audio(url).play();
+			}
+		</script>
+
 		<div id="caption1"><h2>Первая неделя</h2></div>
 		<table>
 			<tr>
@@ -15,7 +22,7 @@
 				<th class="discipline">Вторник</th>
 				<th class="discipline">Среда</th>
 				<th class="discipline">Четверг</th>
-				<th class="discipline"><a href="https://www.youtube.com/watch?v=KWC62-gH_Do" id="easterEgg1">Пятница</a></th>
+				<th class="discipline"><a onclick="playAudio('Audio/friday.ogg')" id="easterEgg1">Пятница</a></th>
 			</tr>
 			<tr>
 				<th class="time"><p id="time">08-30 - 10-05</p></th>
