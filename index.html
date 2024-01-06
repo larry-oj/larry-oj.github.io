@@ -1,12 +1,172 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="refresh" content="0; url=https://larryoj.tk/" />
-        <title>Larry oJ</title>
-    </head>
-    <body>
-        <p><h1>Redirecting</h1></p>
-        <p>If this didn't happen automatically, <a href="https://larryoj.tk/">click here</a></p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ico/logo.png">
+    <link rel="stylesheet" href="css/output.css?v=6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vladyslav Panov</title>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="#me-anchor">Me</a>
+                <a href="#skills-anchor">Skills</a>
+                <a href="#edu-anchor">Education</a>
+                <a class="text-bold" href="#projects-anchor">Projects</a>
+                <a class="btn btn-light" style="width: 70px;" href="#contact-anchor"><i class="fa fa-envelope"></i></a>
+            </nav>
+        </div>
+    </header>
+    <a class="anchor" id="me-anchor"></a>
+    <section id="me">
+        <img src="img/me-purple-2.png" alt="my-photo">
+        <div>
+            <h1>Vladyslav Panov</h1>
+            <h2>Junior .NET developer</h2>
+            <p>I am a responsible and accountable developer from Kyiv, Ukraine 🇺🇦, eager to learn, improve and put my knowledge and skills to good use.</p>
+            <div>
+                <a class="btn" href="https://github.com/larry-oj" target="_blank"><i class="fa fa-github"></i>Github</a>
+                <a class="btn" href="https://www.linkedin.com/in/dev-vladyslav/" target="_blank"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+                <a class="btn btn-accent" href="files/cv_vladyslav_panov.pdf" target="_blank" download><i class="fa fa-file-pdf-o"></i>Resume PDF</a>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="skills-anchor"></a>
+    <section id="skills">
+        <h1>My Skills</h1>
+        <div class="skills">
+            <div class="card skills-card">
+                <img src="img/soft-skills.png">
+                <h2>Soft skills</h2>
+                <ul>
+                    <li>Accountability</li>
+                    <li>Adaptability</li>
+                    <li>Problem solving</li>
+                    <li>Self-Learning</li>
+                    <li>Teamwork</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+            <div class="card skills-card">
+                <h2>Hard skills</h2>
+                <ul>
+                    <li>C# 10 & .NET 6</li>
+                    <li>OOP & Wariety of patterns</li>
+                    <li>EF Core 6</li>
+                    <ul>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <li>ASP.NET Core</li>
+                    <ul>
+                        <li>Web API</li>
+                        <li>MVC</li>
+                        <li>Identity</li>
+                        <li>SignalR</li>
+                        <li>Razor Pages</li>
+                        <li>Blazor (Basic)</li>
+                    </ul>
+                    <li>HTML + CSS (+ SCSS)</li>
+                    <li>JavaScript + Node.js (Basic)</li>
+                </ul>
+            </div>
+            <div class="card skills-card">
+                <img src="img/group-people-talking.jpg">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English - B2</li>
+                    <li>Ukrainian - Native</li>
+                    <li>Russian - Fluent</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <a class="anchor" id="edu-anchor"></a>
+    <section id="edu">
+        <h1>Education</h1>
+        <div>
+            <img src="img/kpi.png">
+            <div>
+                <p>2020 - 2024</p>
+                <h2>Igor Sikorsky Kyiv Polytechnic Institute</h2>
+                
+                <h3>Bachelor's degree in Software Engineering</h3>
+                
+                <ul>
+                    <li>Gained practical skills in software development</li>
+                    <li>Gained communication and teamwork skills</li>
+                </ul>
+            </div>
+        </dic>
+    </section>
+    <a class="anchor" id="projects-anchor"></a>
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="card project-card">
+                <img src="img/messenger.gif">
+                <h2>Razor Pages Messenger</h2>
+                <p>A simple messenger app. Allows registering accounts and sending messages between accounts, holds message history.
+                </p>
+                <div class="tags">
+                    <span>ASP.NET Core</span>
+                    <span>EF Core</span>
+                    <span>SignalR</span>
+                    <span>Identity</span>
+                    <span>Razor Pages</span>
+                    <span>LINQ</span>
+                    <span>IHostedService</span>
+                    <span>OOP Principles</span>
+                    <span>Triple-layered architecture</span>
+                </div>
+                <div class="buttons">
+                    <a class="btn" href="https://github.com/larry-oj/Razor-Messenger" target="_blank"><i
+                            class="fa fa-github"></i>Github</a>
+                    <a class="btn btn-accent btn-inactive"><i class="fa fa-external-link"></i>Live preview</a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <img src="img/bot.gif">
+                <h2>Music Bot Telegram</h2>
+                <h3>Microservice of 3 services</h3>
+                <p>An easy to use Telegram bot that can recognize (shazam-like), search and create .mp3 files of your favourite music. Utilises my own <a href="https://github.com/larry-oj/Music-API" target="_blank"><i class="fa fa-github"></i> Music API</a> and <a href="https://github.com/larry-oj/YouTube-To-MP3" target="_blank"><i class="fa fa-github"></i> MP3 Converter</a>.</p>
+                <div class="tags">
+                    <span>ASP.NET Core</span>
+                    <span>EF Core</span>
+                    <span>LINQ</span>
+                    <span>IHostedService</span>
+                    <span>OOP Principles</span>
+                    <span>Triple-layered architecture</span>
+                </div>
+                <div class="buttons">
+                    <a class="btn" href="https://github.com/larry-oj/Music-Bot-Telegram" target="_blank"><i class="fa fa-github"></i>Github</a>
+                    <a aria-disabled="true" class="btn btn-accent btn-inactive"><i class="fa fa-telegram"></i>Live preview</a>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <a class="anchor" id="contact-anchor"></a>
+    <section id="contact">
+        <h1>Contact me</h1>
+        <div>
+            <p>
+                <i class="fa fa-phone"></i> Phone: <span id="phone"><a>Click to reveal</a></span>
+            </p>
+            <p>
+                <i class="fa fa-envelope"></i> Email: <span id="email"><a>Click to reveal</a></span>
+            </p>
+            <p>
+                <i class="fa fa-telegram"></i> Telegram: <a href="https://t.me/dev_vladyslav" target="_blank">@dev_vladyslav</a>
+            </p>
+            <p>
+                <i class="fa fa-linkedin-square"></i> LinkedIn: <a href="https://www.linkedin.com/in/dev-vladyslav/" target="_blank">dev-vladyslav</a>
+            </p>
+        </div>
+    </section>  
+
+    <script src="js/sctript.js?v=3"></script>
+</body>
 </html>
